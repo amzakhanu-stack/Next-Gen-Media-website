@@ -1,0 +1,362 @@
+:root {
+    --color-dark: #000000;
+    --color-light: #FFFFFF;
+    --color-accent-red: #FF3333;
+    --color-text: #E0E0E0;
+    --font-primary: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-accent-red);
+}
+
+h1, h2, h3 {
+    color: var(--color-light);
+    font-weight: 700;
+}
+
+section {
+    padding: 60px 5%;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--color-light);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.nav-cta a {
+    background-color: var(--color-accent-red);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.nav-cta a:hover {
+    background-color: #FF6666;
+    color: var(--color-dark);
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('placeholder-cinematic-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: var(--color-light);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-red);
+    color: var(--color-dark);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: var(--color-accent-red);
+    color: var(--color-accent-red);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--color-light);
+    color: var(--color-light);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.pillars-section {
+    text-align: center;
+    background-color: #080808;
+}
+
+.pillars-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-bottom: 3px solid var(--color-accent-red);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.pillar-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pillar-card {
+    background-color: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    max-width: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 51, 51, 0.25);
+    border-color: var(--color-accent-red);
+}
+
+.pillar-card h3 {
+    color: var(--color-accent-red);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--color-light);
+    padding-left: 10px;
+}
+
+.team-section {
+    text-align: center;
+    background-color: #111111;
+    padding-bottom: 80px;
+}
+
+.team-subtitle {
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background-color: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid var(--color-accent-red);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 51, 51, 0.2);
+}
+
+.photo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 2px solid var(--color-accent-red);
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: var(--color-light);
+}
+
+.team-member .role {
+    color: var(--color-accent-red);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.youtube-feed-section {
+    text-align: center;
+    background-color: var(--color-dark);
+}
+
+.video-embed-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 30px auto;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    border: 3px solid var(--color-accent-red);
+}
+
+.subscribe-cta {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+.main-footer {
+    background-color: var(--color-dark);
+    color: #666;
+    text-align: center;
+    padding: 20px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #999;
+}
+
+.social-links a:hover {
+    color: var(--color-accent-red);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-accent-red);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 900px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 5%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-dark);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 0;
+        transition: transform 0.3s ease-out;
+    }
+    .main-nav.collapsed {
+        transform: translateY(-1000px);
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .video-embed-placeholder {
+        height: 250px;
+    }
+    .pillar-card {
+        max-width: 100%;
+    }
+    .team-member {
+        width: 45%;
+    }
+}
