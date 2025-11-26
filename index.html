@@ -1,135 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT GEN MEDIA | Telling Tomorrow's Stories, Today</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>NEXT GEN MEDIA | The Future of Visual Storytelling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-red: #ff3333;
+        }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #000;
+            color: #e5e7eb;
+        }
+        /* Cinematic Background Styling */
+        .hero-bg {
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+        }
+        .nav-link:hover {
+            color: var(--color-red);
+        }
+        .text-red-accent {
+            color: var(--color-red);
+        }
+        .border-red-accent {
+            border-color: var(--color-red);
+        }
+    </style>
 </head>
-<body>
+<body class="scroll-smooth">
 
-    <header class="main-header">
-        <div class="logo">NEXT GEN MEDIA</div>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button> 
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="#work">Portfolio</a></li>
-                <li><a href="#pillars">Streams</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="nav-cta"><a href="[Your_YouTube_Link]" target="_blank">📺 Watch Now</a></li>
-            </ul>
-        </nav>
+    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#" class="text-xl font-bold text-white tracking-widest">NEXT GEN MEDIA</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">About</a>
+                <a href="#pillars" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Streams</a>
+                <a href="#team" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Team</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Contact</a>
+                <a href="[YouTube URL]" target="_blank" class="bg-red-accent text-black px-3 py-1 rounded-sm font-semibold hover:bg-red-400 transition duration-300">WATCH NOW</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>The Future of Visual Storytelling.</h1>
-            <p>A collective of filmmakers and journalists defining the next era of media.</p>
-            <div class="hero-buttons">
-                <a href="#work" class="btn btn-primary">View Our Portfolio</a>
-                <a href="[Your_YouTube_Link]" target="_blank" class="btn btn-secondary">Watch Our Latest Film</a>
-            </div>
-        </div>
-        <div class="hero-background-overlay"></div>
-    </section>
-
-    <section id="pillars" class="pillars-section">
-        <h2>Our Media Streams</h2>
-        <div class="pillar-container">
-            <div class="pillar-card">
-                <h3>Originals</h3>
-                <p>High-quality cinematic shorts and documentaries.</p>
-            </div>
-            <div class="pillar-card">
-                <h3>Insights</h3>
-                <p>Journalistic reports and video essays on media trends.</p>
-            </div>
-            <div class="pillar-card">
-                <h3>Roundtable</h3>
-                <p>Deep-dive podcasts and interviews with industry leaders.</p>
-            </div>
+    <section class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 max-w-4xl px-6">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-white mb-4 leading-tight shadow-lg">
+                The Future of Visual Storytelling.
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-300 mb-10">
+                A global collective of filmmakers and journalists defining the future of digital content.
+            </p>
+            <a href="#team" class="bg-red-accent text-black font-bold py-3 px-8 rounded-md text-lg transition duration-300 hover:bg-red-700">
+                MEET THE TEAM
+            </a>
         </div>
     </section>
 
-    <section id="team" class="team-section">
-        <h2>Meet the Team</h2>
-        <p class="team-subtitle">The filmmakers, journalists, and storytellers behind NEXT GEN MEDIA.</p>
-        <div class="team-container">
-            
-           <div class="team-member">
-    <img src="amza_photo.jpg" alt="Photo of Amza" class="member-photo">
-    <h3>AMZA</h3>
-    <p class="role">Lead Director / Cinematography</p>
-</div>
-            
-    <div class="team-member">
-    <div class="photo-placeholder"></div>
-    <h3>JOSHUA</h3>
-    <p class="role">Lead Editor / Post-Production</p>
-</div>
-            
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>MBALU</h3>
-                <p class="role">Chief Journalist / Research Lead</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>HAJARATU</h3>
-                <p class="role">Social Media Strategist / Producer</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>JOSEPHINE</h3>
-                <p class="role">Podcast Host / Script Writer</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>ELLA</h3>
-                <p class="role">Creative Director / Brand Manager</p>
-            </div>
-            
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>LUCY</h3>
-                <p class="role">Associate Producer / Outreach</p>
-            </div>
-
+    <section id="about" class="py-20 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-red-accent mb-6">ABOUT NEXT GEN MEDIA</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                NEXT GEN MEDIA is a collaborative hub dedicated to creating high-impact media. Our mission is to blend cinematic quality with rigorous journalism to tell important, untold stories. We value creativity, truth, and innovation in every project we undertake.
+            </p>
         </div>
     </section>
 
-    <section id="youtube-feed" class="youtube-feed-section">
-        <h2>Latest Release</h2>
-        <div class="video-embed-placeholder">
-            [YouTube Video Embed Goes Here]
+    <section id="pillars" class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 border-b-2 border-red-accent inline-block pb-1">OUR CONTENT STREAMS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Documentaries</h3>
+                    <p class="text-gray-400">Cinematic short and long-form features focusing on compelling human stories.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Podcasts</h3>
+                    <p class="text-gray-400">Deep-dive audio interviews and discussions with media leaders and creators.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Investigative Reporting</h3>
+                    <p class="text-gray-400">Rigorous journalistic projects that uncover truth and provide critical insights.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Social Strategy</h3>
+                    <p class="text-gray-400">Targeted media content designed for maximum engagement across digital platforms.</p>
+                </div>
+            </div>
         </div>
-        <a href="[Your_YouTube_Link]" target="_blank" class="btn btn-primary subscribe-cta">SUBSCRIBE TO NEXT GEN MEDIA</a>
     </section>
 
-    <footer class="main-footer">
-        <p>&copy; 2025 NEXT GEN MEDIA. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">YouTube</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    <section id="team" class="py-20 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-white mb-12 border-b-2 border-red-accent inline-block pb-1">MEET THE TEAM</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="amza_photo.jpg" alt="Photo of Amza" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">AMZA</h3>
+                    <p class="text-sm text-red-accent">Lead Director / Cinematography</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="ella_photo.jpg" alt="Photo of Ella" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">ELLA</h3>
+                    <p class="text-sm text-red-accent">Chief Journalist / Research Lead</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="joshua_photo.jpg" alt="Photo of Joshua" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">JOSHUA</h3>
+                    <p class="text-sm text-red-accent">Member</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="lucy_photo.jpg" alt="Photo of Lucy" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">LUCY</h3>
+                    <p class="text-sm text-red-accent">Member</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="hajaratu_photo.jpg" alt="Photo of Hajaratu" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">HAJARATU</h3>
+                    <p class="text-sm text-red-accent">Member</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="mbalu_photo.jpg" alt="Photo of Mbalu" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">MBALU</h3>
+                    <p class="text-sm text-red-accent">Member</p>
+                </div>
+                
+                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
+                    <img src="josephine_photo.jpg" alt="Photo of Josephine" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
+                    <h3 class="text-xl font-semibold text-white">JOSEPHINE</h3>
+                    <p class="text-sm text-red-accent">Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-black text-center border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white mb-4">WORK WITH US.</h2>
+            <p class="text-xl text-gray-400 mb-8">Ready to bring your story to the screen? Contact our production team today.</p>
+            <a href="mailto:contact@nextgenmedia.com" class="bg-red-accent text-black font-bold py-4 px-12 rounded-md text-xl transition duration-300 hover:bg-red-700">
+                GET IN TOUCH
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2025 NEXT GEN MEDIA. All rights reserved.</p>
+            <div class="space-x-4 mt-4 sm:mt-0">
+                <a href="[YouTube URL]" target="_blank" class="hover:text-red-accent">YouTube</a>
+                <a href="[Instagram URL]" target="_blank" class="hover:text-red-accent">Instagram</a>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
-    <script  src="./script.js"></script>
-
-  </body>
-  
+    
+</body>
 </html>
