@@ -3,167 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT GEN MEDIA | The Future of Visual Storytelling</title>
+    <title>NEXT GEN MEDIA | Minimalist Showcase</title>
+    <!-- Tailwind CSS CDN for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --color-red: #ff3333;
+            /* Define a primary brand color (Orange/Amber for high contrast) */
+            --color-primary: #f59e0b; 
         }
         body {
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-            background-color: #000;
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Deep Dark Background */
             color: #e5e7eb;
         }
-        /* Cinematic Background Styling */
-        .hero-bg {
-            background-image: url('');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+        .text-primary {
+            color: var(--color-primary);
         }
-        .hero-overlay {
-            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+        .bg-primary {
+            background-color: var(--color-primary);
         }
-        .nav-link:hover {
-            color: var(--color-red);
+        .border-primary {
+            border-color: var(--color-primary);
         }
-        .text-red-accent {
-            color: var(--color-red);
+        /* Style for the Team Placeholder Cards */
+        .team-card-placeholder {
+            min-height: 10rem;
+            border: 2px solid #374151; /* Darker border */
+            background-color: #1f2937; /* Slightly lighter background for contrast */
         }
-        .border-red-accent {
-            border-color: var(--color-red);
+        .team-card-placeholder:hover {
+            border-color: var(--color-primary);
+            box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2);
         }
     </style>
 </head>
 <body class="scroll-smooth">
 
-    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm shadow-lg border-b border-gray-800">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-[#0d0d0d]/90 backdrop-blur-md shadow-2xl border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-            <a href="#" class="text-xl font-bold text-white tracking-widest">NEXT GEN MEDIA</a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#about" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">About</a>
-                <a href="#pillars" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Streams</a>
-                <a href="#team" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Team</a>
-                <a href="#contact" class="nav-link text-gray-300 hover:text-red-accent transition duration-300">Contact</a>
-                <a href="[YouTube URL]" target="_blank" class="bg-red-accent text-black px-3 py-1 rounded-sm font-semibold hover:bg-red-400 transition duration-300">WATCH NOW</a>
+            <!-- Logo: High-Contrast Text -->
+            <a href="#" class="text-2xl font-extrabold text-primary tracking-widest">NGM</a>
+            <nav class="hidden md:flex space-x-8 text-sm">
+                <a href="#about" class="text-gray-300 hover:text-primary transition duration-300 font-medium">About</a>
+                <a href="#pillars" class="text-gray-300 hover:text-primary transition duration-300 font-medium">Streams</a>
+                <a href="#team" class="text-gray-300 hover:text-primary transition duration-300 font-medium">Team</a>
+                <a href="#contact" class="text-gray-300 hover:text-primary transition duration-300 font-medium">Contact</a>
+                <a href="[YouTube URL]" target="_blank" class="bg-primary text-black px-4 py-1.5 rounded-full font-semibold hover:bg-amber-400 transition duration-300 shadow-md">
+                    Watch Now
+                </a>
             </nav>
         </div>
     </header>
 
-    <section class="hero-bg h-screen flex items-center justify-center text-center">
-        <div class="hero-overlay absolute inset-0"></div>
+    <!-- Hero Section - Pure Dark Background -->
+    <section class="h-[80vh] flex items-center justify-center text-center bg-black/50">
         <div class="relative z-10 max-w-4xl px-6">
-            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-white mb-4 leading-tight shadow-lg">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight">
                 The Future of Visual Storytelling.
             </h1>
-            <p class="text-xl sm:text-2xl text-gray-300 mb-10">
+            <p class="text-xl sm:text-2xl text-gray-400 mb-12 font-light">
                 A global collective of filmmakers and journalists defining the future of digital content.
             </p>
-            <a href="#team" class="bg-red-accent text-black font-bold py-3 px-8 rounded-md text-lg transition duration-300 hover:bg-red-700">
+            <a href="#team" class="bg-primary text-black font-bold py-3 px-10 rounded-full text-lg shadow-xl transition duration-300 hover:bg-amber-600">
                 MEET THE TEAM
             </a>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-gray-900 border-t border-gray-800">
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-[#141414] border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-red-accent mb-6">ABOUT NEXT GEN MEDIA</h2>
-            <p class="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <h2 class="text-5xl font-bold text-white mb-4">Our Mission</h2>
+            <p class="text-primary font-semibold uppercase tracking-widest mb-10">NEXT GEN MEDIA</p>
+            <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed border-l-4 border-primary pl-6 py-2">
                 NEXT GEN MEDIA is a collaborative hub dedicated to creating high-impact media. Our mission is to blend cinematic quality with rigorous journalism to tell important, untold stories. We value creativity, truth, and innovation in every project we undertake.
             </p>
         </div>
     </section>
 
-    <section id="pillars" class="py-20 bg-black">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-white mb-12 border-b-2 border-red-accent inline-block pb-1">OUR CONTENT STREAMS</h2>
+    <!-- Pillars / Streams Section -->
+    <section id="pillars" class="py-24 bg-[#0d0d0d]">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-white mb-16">OUR CONTENT STREAMS</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Documentaries</h3>
-                    <p class="text-gray-400">Cinematic short and long-form features focusing on compelling human stories.</p>
+                
+                <!-- PILLAR 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transition duration-300 hover:shadow-primary hover:bg-gray-700/50">
+                    <h3 class="text-3xl font-bold text-primary mb-3">01. Documentaries</h3>
+                    <p class="text-gray-300">Cinematic short and long-form features focusing on compelling human stories.</p>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Podcasts</h3>
-                    <p class="text-gray-400">Deep-dive audio interviews and discussions with media leaders and creators.</p>
+                
+                <!-- PILLAR 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transition duration-300 hover:shadow-primary hover:bg-gray-700/50">
+                    <h3 class="text-3xl font-bold text-primary mb-3">02. Podcasts</h3>
+                    <p class="text-gray-300">Deep-dive audio interviews and discussions with media leaders and creators.</p>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Investigative Reporting</h3>
-                    <p class="text-gray-400">Rigorous journalistic projects that uncover truth and provide critical insights.</p>
+                
+                <!-- PILLAR 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transition duration-300 hover:shadow-primary hover:bg-gray-700/50">
+                    <h3 class="text-3xl font-bold text-primary mb-3">03. Investigative Reporting</h3>
+                    <p class="text-gray-300">Rigorous journalistic projects that uncover truth and provide critical insights.</p>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Social Strategy</h3>
-                    <p class="text-gray-400">Targeted media content designed for maximum engagement across digital platforms.</p>
+                
+                <!-- PILLAR 4 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transition duration-300 hover:shadow-primary hover:bg-gray-700/50">
+                    <h3 class="text-3xl font-bold text-primary mb-3">04. Social Strategy</h3>
+                    <p class="text-gray-300">Targeted media content designed for maximum engagement across digital platforms.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="team" class="py-20 bg-gray-900 border-t border-gray-800">
+    <!-- Team Section - Placeholder Grid -->
+    <section id="team" class="py-24 bg-[#141414] border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-white mb-12 border-b-2 border-red-accent inline-block pb-1">MEET THE TEAM</h2>
+            <h2 class="text-4xl font-bold text-center text-white mb-4">The NGM Collective</h2>
+            <p class="text-lg text-gray-400 text-center mb-16">Dedicated minds driving innovation in storytelling.</p>
+            
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="amza_photo.jpg" alt="Photo of Amza" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">AMZA</h3>
-                    <p class="text-sm text-red-accent">Lead Director / Cinematography</p>
+                <!-- PLACEHOLDER CARD 1 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="ella_photo.jpg" alt="Photo of Ella" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">ELLA</h3>
-                    <p class="text-sm text-red-accent">Chief Journalist / Research Lead</p>
+                <!-- PLACEHOLDER CARD 2 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="joshua_photo.jpg" alt="Photo of Joshua" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">JOSHUA</h3>
-                    <p class="text-sm text-red-accent">Member</p>
+                <!-- PLACEHOLDER CARD 3 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="lucy_photo.jpg" alt="Photo of Lucy" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">LUCY</h3>
-                    <p class="text-sm text-red-accent">Member</p>
+                <!-- PLACEHOLDER CARD 4 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="hajaratu_photo.jpg" alt="Photo of Hajaratu" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">HAJARATU</h3>
-                    <p class="text-sm text-red-accent">Member</p>
+                <!-- PLACEHOLDER CARD 5 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="mbalu_photo.jpg" alt="Photo of Mbalu" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">MBALU</h3>
-                    <p class="text-sm text-red-accent">Member</p>
+                <!-- PLACEHOLDER CARD 6 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
                 
-                <div class="flex flex-col items-center p-4 bg-black rounded-lg shadow-lg border border-gray-800 hover:border-red-accent transition duration-300">
-                    <img src="josephine_photo.jpg" alt="Photo of Josephine" class="w-24 h-24 rounded-full object-cover border-2 border-red-accent mb-3">
-                    <h3 class="text-xl font-semibold text-white">JOSEPHINE</h3>
-                    <p class="text-sm text-red-accent">Member</p>
+                <!-- PLACEHOLDER CARD 7 -->
+                <div class="team-card-placeholder p-4 rounded-lg flex flex-col justify-center items-center text-center transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">[TEAM MEMBER NAME]</h3>
+                    <p class="text-sm text-primary">[ROLE / POSITION]</p>
+                    <p class="text-xs text-gray-500 mt-2">Ready for content...</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-black text-center border-t border-gray-800">
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="py-24 bg-[#0d0d0d] text-center border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-white mb-4">WORK WITH US.</h2>
-            <p class="text-xl text-gray-400 mb-8">Ready to bring your story to the screen? Contact our production team today.</p>
-            <a href="mailto:contact@nextgenmedia.com" class="bg-red-accent text-black font-bold py-4 px-12 rounded-md text-xl transition duration-300 hover:bg-red-700">
+            <h2 class="text-5xl font-bold text-white mb-6">Let's Create Together.</h2>
+            <p class="text-xl text-gray-400 mb-10">Ready to bring your story to the screen? Contact our production team today.</p>
+            <a href="mailto:contact@nextgenmedia.com" class="bg-primary text-black font-bold py-4 px-12 rounded-full text-xl shadow-xl transition duration-300 hover:bg-amber-600">
                 GET IN TOUCH
             </a>
         </div>
     </section>
 
-    <footer class="bg-gray-900 py-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+    <!-- Footer -->
+    <footer class="bg-[#1f2937] py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
             <p>&copy; 2025 NEXT GEN MEDIA. All rights reserved.</p>
             <div class="space-x-4 mt-4 sm:mt-0">
-                <a href="[YouTube URL]" target="_blank" class="hover:text-red-accent">YouTube</a>
-                <a href="[Instagram URL]" target="_blank" class="hover:text-red-accent">Instagram</a>
+                <a href="[YouTube URL]" target="_blank" class="hover:text-primary transition duration-300">YouTube</a>
+                <a href="[Instagram URL]" target="_blank" class="hover:text-primary transition duration-300">Instagram</a>
             </div>
         </div>
     </footer>
